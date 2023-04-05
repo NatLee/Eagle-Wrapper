@@ -16,15 +16,13 @@ class Eagle:
         self.port = port
         self.host = f'{domain}:{port}'
 
-    def get_img_info_with_path(self, source_path: str, name_start_filters=None, max_workers=4) -> list:
+    def get_img_info_from_lib_path(self, source_path: str, name_start_filters=[], max_workers=4) -> list:
         '''
         Get all images INFO (meta) from path of source library
 
         For example, there is a path of library is `/path/to/your/test.library`
 
         '''
-        if name_start_filters is None:
-            name_start_filters = []
         imgs_info = []
 
         def load_id(meta_path):
@@ -32,6 +30,10 @@ class Eagle:
             with open(meta_path, 'r', encoding='utf-8') as f:
                 try:
                     data = json.loads(f.read())
+                    name = data.get('name')
+                    for name_start_filter in name_start_filters:
+                        if not name.startswith(name_start_filter):
+                            return {}
                 except Exception as e:
                     logger.warning(f'[Eagle] {e}')
             return data
@@ -71,7 +73,7 @@ class Eagle:
         resp = requests.post(f'{self.host}/api/item/addFromURL', json=data)
         return resp.json()
 
-    def get_image_list_info(self, max_image_number: int, name_start_filter='') -> list:
+    def get_img_list_info(self, max_image_number: int, name_start_filter='') -> list:
         '''
         Get all images information in a list
         '''
