@@ -1,5 +1,6 @@
-# Eagle Wrapper
+![repo-logo](./doc/repo-logo.png)
 
+# Eagle Wrapper
 
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI implementation](https://img.shields.io/pypi/implementation/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
 
