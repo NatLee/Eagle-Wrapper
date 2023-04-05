@@ -1,5 +1,18 @@
 # Eagle Wrapper
 
+
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI implementation](https://img.shields.io/pypi/implementation/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+
+[![Test](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/test.yml/badge.svg)](https://github.com/NatLee/Eagle-Wrappger/actions/workflows/test.yml)[![Release](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/release.yml/badge.svg)](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/release.yml)
+
+[![PyPI status](https://img.shields.io/pypi/status/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI license](https://img.shields.io/pypi/l/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+
+[![PyPI version fury.io](https://badge.fury.io/py/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+
+[![PyPI download month](https://img.shields.io/pypi/dm/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI download week](https://img.shields.io/pypi/dw/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI download day](https://img.shields.io/pypi/dd/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 This is a python wrapper for a image and design management software named Eagle.
 
 Its official website is https://eagle.cool/.
