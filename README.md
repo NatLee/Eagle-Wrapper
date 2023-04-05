@@ -1,5 +1,13 @@
 # Eagle Wrapper
 
+This is a python wrapper for a image and design management software named Eagle.
+
+Its official website is `https://eagle.cool/`.
+
+
+## API Reference
+
+This wrapper is reference from [Eagle Official API documentation](https://api.eagle.cool/)
 
 ## Usage
 
@@ -7,14 +15,83 @@
 pip install EagleWrapper
 ```
 
+> Notice: You need open Eagle when using this wrapper or it cannot find your host of Eagle.
+
+## Method
+
+
+- get_image_list_info
+
+List image INFO which name starting with `ぼ` in limit 10.
+
+```python
+from eagle_wrapper import Eagle
+eagle = Eagle()
+max_image_number = 10
+name_start_filter = 'ぼ'
+image_list_info = eagle.get_image_list_info(max_image_number, name_start_filter)
+```
+
+```json
+[{
+    "id": "LG3YCGZW5QH1B",
+    "name": "ぼっち・ざ・ろっく！",
+    "size": 219336,
+    "btime": 1680715050765,
+    "mtime": 1680715050880,
+    "ext": "jpg",
+    "tags": ["ぼっち", "ろっく"],
+    "folders": [],
+    "isDeleted": false,
+    "url": "https://tw.news.yahoo.com/bocchi-the-rock-071607480.html",
+    "annotation": "This is an example ;)",
+    "modificationTime": 1680715050761,
+    "height": 684,
+    "width": 960,
+    "noThumbnail": true,
+    "palettes": [
+        {
+            "color": [196, 172, 154],
+            "ratio": 33,
+            "$$hashKey": "object:1775"
+        },
+        {
+            "color": [48, 43, 43],
+            "ratio": 26,
+            "$$hashKey": "object:1776"
+        },
+        ...
+        {
+            "color": [225, 204, 205],
+            "ratio": 2.66,
+            "$$hashKey": "object:1783"
+        }
+    ]
+}]
+```
+
+## Contributor
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/NatLee"><img src="https://avatars.githubusercontent.com/u/10178964?v=3?s=100" width="100px;" alt="Nat Lee"/><br /><sub><b>Nat Lee</b></sub></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## License
 
-MIT
+[MIT](LICENSE)
 
-
-## Contributors
-
-[Nat Lee](https://github.com/natlee)
 
 
 
