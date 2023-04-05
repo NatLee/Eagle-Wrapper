@@ -2,7 +2,7 @@
 
 This is a python wrapper for a image and design management software named Eagle.
 
-Its official website is `https://eagle.cool/`.
+Its official website is https://eagle.cool/.
 
 
 ## API Reference
@@ -19,18 +19,45 @@ pip install EagleWrapper
 
 ## Method
 
+- get_img_info_from_lib_path
 
-- get_image_list_info
+> This is a method of searching file `metadata.json` of images from directly library folder, so it will fast than using `get_img_list_info`.
+
+```python
+eagle = Eagle()
+source_path = '/my/lib/path/example/測試.library' # your library path
+name_start_filters = ['example', 'ぼ'] # your filters with the image name
+image_info = eagle.get_img_info_from_lib_path(source_path, name_start_filters)
+```
+
+- add_from_url
+
+```python
+url = 'https://s.yimg.com/ny/api/res/1.2/1ui_Mvv4s2Gtmr4uZdP.mA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY4NDtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2022-11/1f7132d0-5e6a-11ed-b7bd-ba3b4a3aed4f'
+name = 'ぼっち・ざ・ろっく！'
+tags = ['ぼっち', 'ろっく']
+website = 'https://tw.news.yahoo.com/bocchi-the-rock-071607480.html'
+annotation = 'This is an example ;)'
+eagle.add_from_url(url, name, tags, website, annotation)
+```
+
+This output will show in Eagle:
+
+![add-from-url](./doc/add-from-url.png)
+
+- get_img_list_info
 
 List image INFO which name starting with `ぼ` in limit 10.
 
 ```python
 from eagle_wrapper import Eagle
 eagle = Eagle()
-max_image_number = 10
-name_start_filter = 'ぼ'
-image_list_info = eagle.get_image_list_info(max_image_number, name_start_filter)
+max_image_number = 10 # maximum number of images for searching
+name_start_filter = 'ぼ' # search filters
+image_list_info = eagle.get_img_list_info(max_image_number, name_start_filter)
 ```
+
+The output is:
 
 ```json
 [{
