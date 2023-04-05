@@ -40,6 +40,7 @@ pip install EagleWrapper
 > This is a method of searching file `metadata.json` of images from directly library folder, so it will fast than using `get_img_list_info`.
 
 ```python
+from eagle_wrapper import Eagle
 eagle = Eagle()
 source_path = '/my/lib/path/example/測試.library' # your library path
 name_start_filters = ['example', 'ぼ'] # your filters with the image name
@@ -49,6 +50,8 @@ image_info = eagle.get_img_info_from_lib_path(source_path, name_start_filters)
 - add_from_url
 
 ```python
+from eagle_wrapper import Eagle
+eagle = Eagle()
 url = 'https://s.yimg.com/ny/api/res/1.2/1ui_Mvv4s2Gtmr4uZdP.mA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY4NDtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2022-11/1f7132d0-5e6a-11ed-b7bd-ba3b4a3aed4f'
 name = 'ぼっち・ざ・ろっく！'
 tags = ['ぼっち', 'ろっく']
