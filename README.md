@@ -23,7 +23,40 @@ Its official website is https://eagle.cool/.
 
 This wrapper is reference from [Eagle Official API documentation](https://api.eagle.cool/)
 
-Some APIs are not available in this wrapper because they are not implemented.
+List APIs are available in this wrapper.
+
+### Applications
+
+[x] /api/application/info -> `get_application_info`
+
+### Folder
+
+[x] /api/folder/create -> `create_folder`
+[x] /api/folder/rename -> `rename_folder`
+[x] /api/folder/update -> `update_folder`
+[x] /api/folder/list -> `list_folders`
+[x] /api/folder/listRecent -> `get_recent_folders`
+
+### Item
+
+[x] /api/item/addFromURL -> `add_from_url`
+[x] /api/item/addFromURLs -> `add_from_urls`
+[x] /api/item/addFromPath -> `add_from_path`
+[x] /api/item/addFromPaths -> `add_from_paths`
+[x] /api/item/addBookmark -> `add_bookmark`
+[x] /api/item/info -> `get_item_info`
+[x] /api/item/thumbnail -> `get_thumbnail_path`
+[x] /api/item/list -> `list_items`
+[x] /api/item/moveToTrash -> `move_to_trash`
+[x] /api/item/refreshPalette -> `refresh_palette`
+[x] /api/item/refreshThumbnail -> `refresh_thumbnail`
+[x] /api/item/update -> `update_item`
+
+### Library
+
+[x] /api/library/info -> `get_library_info`
+[x] /api/library/history -> `get_library_history`
+[x] /api/library/switch -> `switch_library`
 
 ## Usage
 
@@ -40,7 +73,7 @@ pip install EagleWrapper
 > This is a method of searching file `metadata.json` of images from directly library folder, so it will fast than using `get_img_list_info`.
 
 ```python
-from eagle_wrapper import Eagle
+from eaglewrapper import Eagle
 eagle = Eagle()
 source_path = '/my/lib/path/example/測試.library' # your library path
 name_start_filters = ['example', 'ぼ'] # your filters with the image name
@@ -50,7 +83,7 @@ image_info = eagle.get_img_info_from_lib_path(source_path, name_start_filters)
 - add_from_url
 
 ```python
-from eagle_wrapper import Eagle
+from eaglewrapper import Eagle
 eagle = Eagle()
 url = 'https://s.yimg.com/ny/api/res/1.2/1ui_Mvv4s2Gtmr4uZdP.mA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY4NDtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2022-11/1f7132d0-5e6a-11ed-b7bd-ba3b4a3aed4f'
 name = 'ぼっち・ざ・ろっく！'
@@ -69,7 +102,7 @@ This output will show in Eagle:
 List image INFO which name starting with `ぼ` in limit 10.
 
 ```python
-from eagle_wrapper import Eagle
+from eaglewrapper import Eagle
 eagle = Eagle()
 max_image_number = 10 # maximum number of images for searching
 name_start_filter = 'ぼ' # search filters
