@@ -1,4 +1,4 @@
-![repo-logo](./doc/repo-logo.png)
+![repo-logo](https://raw.githubusercontent.com/NatLee/Eagle-Wrapper/main/doc/repo-logo.png)
 
 # Eagle Wrapper
 
@@ -95,7 +95,7 @@ eagle.add_from_url(url, name, tags, website, annotation)
 
 This output will show in Eagle:
 
-![add-from-url](./doc/add-from-url.png)
+![add-from-url](https://raw.githubusercontent.com/NatLee/Eagle-Wrapper/main/doc/add-from-url.png)
 
 - get_img_list_info
 
