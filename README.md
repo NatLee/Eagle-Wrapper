@@ -27,36 +27,36 @@ List APIs are available in this wrapper.
 
 ### Applications
 
-[x] /api/application/info -> `get_application_info`
+- [x] /api/application/info -> `get_application_info`
 
 ### Folder
 
-[x] /api/folder/create -> `create_folder`
-[x] /api/folder/rename -> `rename_folder`
-[x] /api/folder/update -> `update_folder`
-[x] /api/folder/list -> `list_folders`
-[x] /api/folder/listRecent -> `get_recent_folders`
+- [x] /api/folder/create -> `create_folder`
+- [x] /api/folder/rename -> `rename_folder`
+- [x] /api/folder/update -> `update_folder`
+- [x] /api/folder/list -> `list_folders`
+- [x] /api/folder/listRecent -> `get_recent_folders`
 
 ### Item
 
-[x] /api/item/addFromURL -> `add_from_url`
-[x] /api/item/addFromURLs -> `add_from_urls`
-[x] /api/item/addFromPath -> `add_from_path`
-[x] /api/item/addFromPaths -> `add_from_paths`
-[x] /api/item/addBookmark -> `add_bookmark`
-[x] /api/item/info -> `get_item_info`
-[x] /api/item/thumbnail -> `get_thumbnail_path`
-[x] /api/item/list -> `list_items`
-[x] /api/item/moveToTrash -> `move_to_trash`
-[x] /api/item/refreshPalette -> `refresh_palette`
-[x] /api/item/refreshThumbnail -> `refresh_thumbnail`
-[x] /api/item/update -> `update_item`
+- [x] /api/item/addFromURL -> `add_from_url`
+- [x] /api/item/addFromURLs -> `add_from_urls`
+- [x] /api/item/addFromPath -> `add_from_path`
+- [x] /api/item/addFromPaths -> `add_from_paths`
+- [x] /api/item/addBookmark -> `add_bookmark`
+- [x] /api/item/info -> `get_item_info`
+- [x] /api/item/thumbnail -> `get_thumbnail_path`
+- [x] /api/item/list -> `list_items`
+- [x] /api/item/moveToTrash -> `move_to_trash`
+- [x] /api/item/refreshPalette -> `refresh_palette`
+- [x] /api/item/refreshThumbnail -> `refresh_thumbnail`
+- [x] /api/item/update -> `update_item`
 
 ### Library
 
-[x] /api/library/info -> `get_library_info`
-[x] /api/library/history -> `get_library_history`
-[x] /api/library/switch -> `switch_library`
+- [x] /api/library/info -> `get_library_info`
+- [x] /api/library/history -> `get_library_history`
+- [x] /api/library/switch -> `switch_library`
 
 ## Usage
 
