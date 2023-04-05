@@ -9,6 +9,8 @@ Its official website is https://eagle.cool/.
 
 This wrapper is reference from [Eagle Official API documentation](https://api.eagle.cool/)
 
+Some APIs are not available in this wrapper because they are not implemented.
+
 ## Usage
 
 ```bash
