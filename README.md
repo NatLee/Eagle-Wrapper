@@ -1,18 +1,27 @@
-![repo-logo](https://raw.githubusercontent.com/NatLee/Eagle-Wrapper/main/doc/repo-logo.png)
 
-# Eagle Wrapper
+<div align="center" style="text-align: center">
 
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI implementation](https://img.shields.io/pypi/implementation/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+<p style="text-align: center">
+  <img align="center" src="https://raw.githubusercontent.com/NatLee/Eagle-Wrapper/main/doc/repo-logo.png" alt="Eagle Wrapper">
+</p>
 
-[![Test](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/test.yml/badge.svg)](https://github.com/NatLee/Eagle-Wrappger/actions/workflows/test.yml)[![Release](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/release.yml/badge.svg)](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/release.yml)
+**Eagle Wrapper - A wrapper for Eagle API**
 
-[![PyPI status](https://img.shields.io/pypi/status/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI license](https://img.shields.io/pypi/l/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/) [![PyPI implementation](https://img.shields.io/pypi/implementation/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
 
-[![PyPI version fury.io](https://badge.fury.io/py/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+[![Test](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/test.yml/badge.svg)](https://github.com/NatLee/Eagle-Wrappger/actions/workflows/test.yml) [![Release](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/release.yml/badge.svg)](https://github.com/NatLee/Eagle-Wrapper/actions/workflows/release.yml)
 
-[![PyPI download month](https://img.shields.io/pypi/dm/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI download week](https://img.shields.io/pypi/dw/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)[![PyPI download day](https://img.shields.io/pypi/dd/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+[![PyPI status](https://img.shields.io/pypi/status/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/) [![PyPI license](https://img.shields.io/pypi/l/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+
+[![PyPI version fury.io](https://badge.fury.io/py/eaglewrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
+
+[![PyPI download month](https://img.shields.io/pypi/dm/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/) [![PyPI download week](https://img.shields.io/pypi/dw/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/) [![PyPI download day](https://img.shields.io/pypi/dd/EagleWrapper.svg)](https://pypi.python.org/pypi/EagleWrapper/)
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+</div>
+
+---
 
 This is a python wrapper for a image and design management software named Eagle.
 
